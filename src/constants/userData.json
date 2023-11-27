@@ -1,0 +1,26 @@
+[
+    {
+        "username": "kaushik",
+        "password": "password",
+        "name":"Kaushik Kumar",
+        "designation": "React Js Developer",
+        "country": "India",
+        "isLoggedIn": true
+    },
+    {
+        "username": "admin",
+        "password": "abc123",
+        "name":"Admin",
+        "designation": "Administrator",
+        "country": "United Kingdom",
+        "isLoggedIn": true
+    },
+    {
+        "username": "safestart",
+        "password": "xyzabc",
+        "name":"Safe Start",
+        "designation": "Safety Trainer",
+        "country": "Canada",
+        "isLoggedIn": true
+    }
+]
