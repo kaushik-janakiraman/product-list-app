@@ -1,15 +1,28 @@
-import React from 'react'
-import { Provider } from 'react-redux'
-import store from './store'
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import Login from './components/login'
+import { Route, Routes, useNavigate } from 'react-router-dom'
+import MainContent from './components/mainContent/MainContent'
 
 function App() {
+  
+  const { isLoggedIn } = useSelector(store => store.user)
+  
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if(!isLoggedIn) {
+      navigate('/login')
+    }
+  }, [isLoggedIn])
 
   return (
     <React.Fragment>
-      <Provider store={store}>
-        <Login />
-      </Provider>
+      <Routes>
+          <Route path='/login' element={<Login />}/>
+      </Routes>  
+      {isLoggedIn && <MainContent />}
     </React.Fragment>
   )
 }
