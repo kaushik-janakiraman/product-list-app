@@ -14,4 +14,4 @@ After successful login user will be navigated to product list screen
 ## Profile
 Profile screen will display the user information from Redux state management tool.
 
-Project has been deployed on Vercel: [Product-App](https://product-list-app-jet.vercel.app)
+Project has been deployed on Vercel: [Product-App]([https://product-list-app-jet.vercel.app](https://product-list-ftzg773cl-kaushiks-projects-9d3f30d5.vercel.app/)https://product-list-ftzg773cl-kaushiks-projects-9d3f30d5.vercel.app/)
