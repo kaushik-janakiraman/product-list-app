@@ -14,4 +14,4 @@ After successful login user will be navigated to product list screen
 ## Profile
 Profile screen will display the user information from Redux state management tool.
 
-Project has been deployed on Github page: [Product-App](https://kaushik-janakiraman.github.io/product-list-app)
+Project has been deployed on Vercel: [Product-App](https://product-list-app-jet.vercel.app)
