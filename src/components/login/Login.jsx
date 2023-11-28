@@ -1,11 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import userList from '../../constants/userData.json'
 import { updateUser } from '../../features/userSlice/userSlice'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
-
-    const { designation } = useSelector(store => store.user)
 
     const [credential, setCredential] = useState({
         username: '',
@@ -17,6 +16,7 @@ const Login = () => {
     const filterUser = useRef([])
 
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const handleCredentials = (e) => {
         setCredential({...credential, [e.target.name] : e.target.value})
@@ -33,15 +33,13 @@ const Login = () => {
         setCheckCredential(false)
         if(filterUser.current.length === 0) {
             setCheckCredential(true)
+            dispatch(updateUser(filterUser.current))
             return
         }
 
         dispatch(updateUser(filterUser.current))
+        navigate('/')
     }
-
-    useEffect(() => {
-        console.log(designation)
-    })
 
     return (
         <React.Fragment>
