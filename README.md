@@ -1,8 +1,17 @@
-# React + Vite
+# Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Product App contains three screens:
+* Login
+* Product List
+* Profile
 
-Currently, two official plugins are available:
+## Login
+Please refer **constants > userData.json** file for the combination of pre-defined username and password. Use this credential on login screen for successful authentication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Product List
+After successful login user will be navigated to product list screen
+
+## Profile
+Profile screen will display the user information from Redux state management tool.
+
+Project has been deployed on Github page: [Product-App](https://kaushik-janakiraman.github.io/product-list-app)
